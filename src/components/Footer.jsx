@@ -14,7 +14,7 @@ export default function Footer() {
   const closeModal = () => setModalContent(null);
 
   // TODO: 실제 선생님 정보로 업데이트 필요
-  const teacherName = "[선생님 성함]";
+  const teacherName = "채관철";
 
   return (
     <>
