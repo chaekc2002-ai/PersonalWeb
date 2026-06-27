@@ -13,19 +13,22 @@ export default function Footer() {
 
   const closeModal = () => setModalContent(null);
 
+  // TODO: 실제 선생님 정보로 업데이트 필요
+  const teacherName = "[선생님 성함]";
+
   return (
     <>
       <footer className="portal-footer">
         <div className="footer-content">
           <div className="footer-links">
-            <button onClick={() => openModal('privacy')} className="footer-link">개인정보 처리방침</button>
-            <span className="divider">|</span>
             <button onClick={() => openModal('terms')} className="footer-link">이용약관</button>
             <span className="divider">|</span>
-            <span className="footer-text">담당자: 홍길동 선생님 (문의: teacher@school.edu)</span>
+            <button onClick={() => openModal('privacy')} className="footer-link">개인정보처리방침</button>
+            <span className="divider">|</span>
+            <span className="footer-text">정보관리책임자: {teacherName}</span>
           </div>
           <div className="footer-info">
-            <p>OO초등학교 | 시행일: 2026.06.27 | 최근 변경일: 2026.06.27</p>
+            <p>&copy; 2026 {teacherName}. All rights reserved.</p>
           </div>
         </div>
       </footer>
