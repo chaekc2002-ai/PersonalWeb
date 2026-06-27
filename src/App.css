@@ -1,0 +1,4 @@
+/* App-wide general styles if any */
+.app-wrapper {
+  min-height: 100vh;
+}

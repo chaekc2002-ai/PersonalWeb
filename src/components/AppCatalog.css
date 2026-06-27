@@ -1,0 +1,149 @@
+.catalog-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+.catalog-header {
+  background: white;
+  padding: 2rem 0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 2.2rem;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+  font-weight: 800;
+}
+
+.notice-badge {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.catalog-main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.app-card {
+  background: white;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  top: 0;
+}
+
+.app-card:hover {
+  top: -8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+}
+
+.app-card-content {
+  padding: 2rem;
+  flex: 1;
+}
+
+.app-icon-wrapper {
+  background: #eff6ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.app-icon-svg {
+  color: #3b82f6;
+  width: 28px;
+  height: 28px;
+}
+
+.app-title {
+  font-size: 1.4rem;
+  color: #1e293b;
+  margin: 0 0 0.75rem 0;
+  font-weight: 700;
+}
+
+.app-description {
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.app-card-footer {
+  padding: 1rem 2rem;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e2e8f0;
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.app-card:hover .app-card-footer {
+  background: #eff6ff;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: white;
+  border-radius: 24px;
+  border: 2px dashed #cbd5e1;
+}
+
+.empty-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.empty-state h2 {
+  color: #334155;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #64748b;
+}
