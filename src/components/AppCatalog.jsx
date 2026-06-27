@@ -37,6 +37,11 @@ export default function AppCatalog() {
 
   return (
     <div className="catalog-container">
+      {/* 장식용 구름 배경 */}
+      <div className="cloud-bg cloud-1"></div>
+      <div className="cloud-bg cloud-2"></div>
+      <div className="cloud-bg cloud-3"></div>
+
       <header className="catalog-header">
         <div className="header-content">
           <h1>학급용 웹앱 통합 포털</h1>
